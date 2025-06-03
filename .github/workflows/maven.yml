@@ -51,7 +51,7 @@ jobs:
         run: mvn -B package --file pom.xml
         env:
           DB_HOST: 127.0.0.1
-          DB_PORT: 330
+          DB_PORT: 3305
           DB_NAME: newdatadb
           DB_USER: root
           DB_PASS: Dev@2006
