@@ -19,7 +19,7 @@ jobs:
           MYSQL_USER: testuser
           MYSQL_PASSWORD: testpass
         ports:
-          - 3305:3305
+          - 3307:3306
         options: >-
           --health-cmd="mysqladmin ping --silent"
           --health-interval=10s
@@ -51,7 +51,7 @@ jobs:
         run: mvn -B package --file pom.xml
         env:
           DB_HOST: 127.0.0.1
-          DB_PORT: 3305
+          DB_PORT: 3306
           DB_NAME: newdatadb
           DB_USER: root
           DB_PASS: Dev@2006
